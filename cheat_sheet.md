@@ -57,3 +57,22 @@ you the quick fix for this remove unknown applications from app armor using sudo
 * inspect	- inspect a given volume
 * prune		- delete all unused volumes
 * rm 		- remove a volume
+
+## Volumes vs Bind mounts
+
+* Bind mounts rely on the file structure of the docker host
+	* You need to manage the structure
+	* The container will also hence have access to the file system of the host
+* Volumes are managed by Docker
+	* Independent of the file system of the host
+	* It is easy to migrate and backup
+	* It is managed by the docker client
+	* Can be pre-populated with data from a container
+
+## Dockerfile commands
+
+* __FROM__ - to specify a source image to build this image from
+* __RUN__  - to specify commands to run during building the images
+* __COPY__ - to copy files in the host the container
+* __ADD__  - to copy or add files from the host, remote urls or archives
+* __CMD__  - commands to be run when a container is run
