@@ -30,6 +30,8 @@
 * --link	- a deprecated way to make another container's name visible within container
 * --volume	- to mount a folder
 * --mount 	- is a more implicit mount with many options
+* -e		- to supply environment variables
+* --env-file	- to supply a file with env vars
 
 __If you have trouble killing a container it's probably because linuxes app armor is stopping
 you the quick fix for this remove unknown applications from app armor using sudo aa-remove-unknown__
@@ -76,3 +78,4 @@ you the quick fix for this remove unknown applications from app armor using sudo
 * __COPY__ - to copy files in the host the container
 * __ADD__  - to copy or add files from the host, remote urls or archives
 * __CMD__  - commands to be run when a container is run
+* __ENV__  -

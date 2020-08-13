@@ -58,6 +58,7 @@ RUN cd /root/os161/src/sys161-1.99.06;./configure --prefix=$PREFIX mipseb;make;m
 RUN echo "sys161 installation complete"
 
 # build and install bmake
+RUN echo "Copy these instructions"
 RUN cd /root/os161/src/bmake;./boot-strap --prefix=$PREFIX -m none;
 RUN echo "Execute the above commands one by one to install bmake";
 RUN echo "Most of the directory setup is done complete the rest following steps from bmake  installation from Jinghao Shi's blog http://jhshi.me/2013/12/15/os161-tool-chain-setup/index.html#.XyPJdHUzaV5"
